@@ -16,7 +16,7 @@ try {
     const region = result.location.region;
     
     console.log(name,data,region);
-    document.querySelector(".card").innerHTML=`<h1>${name}, ${region}</h1><img src="weather.png"><span>${data}</span>`;
+    document.querySelector(".card").innerHTML=`<h1>${name}, ${region}</h1><img src="weather.png"><span>${data} C</span>`;
 	
 } catch (error) {
 	console.error(error);
