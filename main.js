@@ -10,7 +10,9 @@ const options = {
 
 try {
 	const response = await fetch(url, options);
+	
 	const result = await response.json();
+	
     const data = result.current.temp_f;
     const name = result.location.name;
     const region = result.location.region;
